@@ -1,0 +1,58 @@
+import React, { useState } from "react";
+
+import "./App.css";
+
+import { stockList } from "./stockList";
+import Nifty50 from "./modules/Nifty-50";
+import BankNifty, { FutureOpenInterest } from "./modules/BankNifty";
+import {
+  BankNiftyOptionChain,
+  BankNiftyStrikePrices,
+} from "./modules/BankNifty";
+
+import Test from "../src/modules/Test";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+function App() {
+  const [selectedValue, setSelectedValue] = useState(stockList[0]);
+
+  console.log("selected", selectedValue);
+  const handleChange = (e) => {
+    setSelectedValue(e);
+  };
+  // s-p-cnx-nifty-chart
+  let investingStockUrl = "https://in.investing.com/equities";
+  let investingIndicesUrl = "https://in.investing.com/indices";
+
+  // console.log(`${investingUrl}/${selectedValue.value}`);
+  return (
+    <div className="main">
+      <Router>
+        <Switch>
+          <Route
+            path="/FutureOpenInterest"
+            component={FutureOpenInterest}
+          />
+          <Route
+            path="/BankNiftyOptionChain"
+            component={BankNiftyOptionChain}
+          />
+          <Route path="/strikePrices" component={BankNiftyStrikePrices} />
+          <Route path="/" component={BankNifty} />
+        </Switch>
+      </Router>
+      {/* <Nifty50
+        {...{
+          selectedValue,
+          setSelectedValue,
+          handleChange,
+          investingStockUrl,
+          investingIndicesUrl,
+        }}
+      /> */}
+      {/* <BankNifty /> */}
+      {/* <Test /> */}
+    </div>
+  );
+}
+
+export default App;
