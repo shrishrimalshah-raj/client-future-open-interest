@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Chart from "react-google-charts";
 import axios from "axios";
-import { stockList } from "./StockList";
+import { stockList, BankNiftyList, NiftyList } from "./StockList";
 import Select from "react-select";
 
 const FutureOpenInterest = () => {
@@ -122,7 +122,7 @@ const FutureOpenInterest = () => {
       value: "pcrLessThan",
     },
     {
-      label: "PCR Value is More Than 1.30",
+      label: "PCR Value is More Than 1",
       value: "pcrMoreThan",
     },
     {
@@ -135,6 +135,18 @@ const FutureOpenInterest = () => {
     },
   ];
 
+  const sumStockPercentage = (IndexStockList, AllStocksList) => {
+    let total = 0;
+    IndexStockList.forEach((stock) => {
+      AllStocksList.forEach((item) => {
+        if (item.value === stock.symbol) {
+          total += stock.weightage;
+        }
+      });
+    });
+    return Math.round(total);
+  };
+
   const handleFilterBy = async (selectedOption) => {
     const { value } = selectedOption;
 
@@ -146,7 +158,7 @@ const FutureOpenInterest = () => {
       );
       let data = [];
 
-      data = result.data.map((item) => ({
+      data = result.data.length > 0 && result.data.map((item) => ({
         label: item.symbol,
         value: item.symbol,
       }));
@@ -166,7 +178,8 @@ const FutureOpenInterest = () => {
             options={filterOptions}
           />
         </div>
-        <div style={{ width: "400px" }}>
+        {/* stockListOption */}
+        <div style={{ width: "400px", marginRight: "50px" }}>
           <div>Select Stock</div>
           <Select
             value={state}
@@ -174,6 +187,24 @@ const FutureOpenInterest = () => {
             options={stockListOption}
           />
         </div>
+        <div style={{ width: "400px", fontSize: "20px" }}>
+          <div>Total Stocks Array Length</div>
+          <div style={{ marginTop: "15px", marginLeft: "15px" }}>
+            <b>{stockListOption.length}</b>
+          </div>
+        </div>
+        <div style={{ width: "400px", fontSize: "20px" }}>
+          <div>Nifty Percentage</div>
+          <div style={{ marginTop: "15px", marginLeft: "15px" }}>
+            <b>{sumStockPercentage(NiftyList, stockListOption)}%</b>
+          </div>
+        </div>
+        <div style={{ width: "400px", fontSize: "20px" }}>
+          <div>Bank Nifty Percentage</div>
+          <div style={{ marginTop: "15px", marginLeft: "15px" }}>
+            <b>{sumStockPercentage(BankNiftyList, stockListOption)}%</b>
+          </div>
+        </div>  
       </div>
 
       <div style={{ textAlign: "center" }}>

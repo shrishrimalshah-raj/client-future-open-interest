@@ -672,3 +672,260 @@ export const stockList = [
     value: "ZEEL",
   },
 ];
+
+
+export const BankNiftyList = [
+  {
+      symbol: "HDFCBANK",
+      weightage: 26.68,
+  },
+  {
+      symbol: "ICICIBANK",
+      weightage: 18.70,
+  },
+  {
+      symbol: "KOTAKBANK",
+      weightage: 16.66,
+  },
+  {
+      symbol: "AXISBANK",
+      weightage: 14.77,
+  },
+  {
+      symbol: "SBIN",
+      weightage: 11.14,
+  },
+  {
+      symbol: "INDUSINDBK",
+      weightage: 4.79,
+  },
+  {
+      symbol: "BANDHANBNK",
+      weightage: 2.11,
+  },
+  {
+      symbol: "FEDERALBNK",
+      weightage: 1.63,
+  },
+  {
+      symbol: "RBLBANK",
+      weightage: 1.19,
+  },
+  {
+      symbol: "IDFCFIRSTB",
+      weightage: 0.85,
+  },
+  {
+      symbol: "BANKBARODA",
+      weightage: 0.85,
+  },
+  {
+      symbol: "PNB",
+      weightage: 0.64,
+  },
+  ]
+
+export const NiftyList = [
+  {
+      symbol: "RELIANCE",
+      weightage: 14.93,
+  },
+  {
+      symbol: "HDFCBANK",
+      weightage: 9.69,
+  },
+  {
+      symbol: "INFY",
+      weightage: 7.63,
+  },
+  {
+      symbol: "HDFC",
+      weightage: 6.44,
+  },
+  {
+      symbol: "TCS",
+      weightage: 5.41,
+  },
+  {
+      symbol: "ICICIBANK",
+      weightage: 5.06,
+  },
+  {
+      symbol: "KOTAKBANK",
+      weightage: 3.84,
+  },
+  {
+      symbol: "HINDUNILVR",
+      weightage: 3.82,
+  },
+  {
+      symbol: "ITC",
+      weightage: 3.1,
+  },
+  
+  {
+      symbol: "LT",
+      weightage: 2.28,
+  },
+  {
+      symbol: "AXISBANK",
+      weightage: 2.18,
+  },
+  {
+      symbol: "BHARTIARTL",
+      weightage: 2.09,
+  },
+  {
+      symbol: "ASIANPAINT",
+      weightage: 1.85,
+  },
+  {
+      symbol: "MARUTI",
+      weightage: 1.85,
+  },
+  {
+      symbol: "HCLTECH",
+      weightage: 1.82,
+  },
+  {
+      symbol: "BAJFINANCE",
+      weightage: 1.8,
+  },
+  {
+      symbol: "SBIN",
+      weightage: 1.47,
+  },
+  {
+      symbol: "DRREDDY",
+      weightage: 1.3,
+  },
+  {
+      symbol: "M&M",
+      weightage: 1.2,
+  },
+  {
+      symbol: "NESTLEIND",
+      weightage: 1.17,
+  },
+  {
+      symbol: "SUNPHARMA",
+      weightage: 1.12,
+  },
+  {
+      symbol: "TITAN",
+      weightage: 1.04,
+  },
+  {
+      symbol: "TECHM",
+      weightage: 1.01,
+  },
+  {
+      symbol: "ULTRACEMCO",
+      weightage: 0.97,
+  },
+  {
+      symbol: "WIPRO",
+      weightage: 0.96,
+  },
+  {
+      symbol: "BRITANNIA",
+      weightage: 0.93,
+  },
+  {
+      symbol: "HDFCLIFE",
+      weightage: 0.91,
+  },
+  {
+      symbol: "POWERGRID",
+      weightage: 0.86,
+  },
+  {
+      symbol: "NTPC",
+      weightage: 0.85,
+  },
+  {
+      symbol: "HEROMOTOCO",
+      weightage: 0.84,
+  },
+  {
+      symbol: "CIPLA",
+      weightage: 0.81,
+  },
+  {
+      symbol: "DIVISLAB",
+      weightage: 0.8,
+  },
+  {
+      symbol: "BAJAJ-AUTO",
+      weightage: 0.78,
+  },
+  {
+      symbol: "BAJAJFINSV",
+      weightage: 0.73,
+  },
+  {
+      symbol: "SBILIFE",
+      weightage: 0.65,
+  },
+  {
+      symbol: "EICHERMOT",
+      weightage: 0.63,
+  },
+  {
+      symbol: "INDUSINDBK",
+      weightage: 0.62,
+  },
+  {
+      symbol: "GRASIM",
+      weightage: 0.61,
+  },
+  {
+      symbol: "BPCL",
+      weightage: 0.59,
+  },
+  {
+      symbol: "JSWSTEEL",
+      weightage: 0.57,
+  },
+  {
+      symbol: "UPL",
+      weightage: 0.57,
+  },
+  {
+      symbol: "SHREECEM",
+      weightage: 0.56,
+  },
+  {
+      symbol: "TATASTEEL",
+      weightage: 0.56,
+  },
+  {
+      symbol: "HINDALCO",
+      weightage: 0.53,
+  },
+  {
+      symbol: "ADANIPORTS",
+      weightage: 0.52,
+  },
+  {
+      symbol: "ONGC",
+      weightage: 0.52,
+  },
+  {
+      symbol: "COALINDIA",
+      weightage: 0.5,
+  },
+  {
+      symbol: "TATAMOTORS",
+      weightage: 0.49,
+  },
+  {
+      symbol: "OIL",
+      weightage: 0.39,
+  },
+  {
+      symbol: "GAIL",
+      weightage: 0.33,
+  },
+  ]
+  
